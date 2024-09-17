@@ -1,0 +1,22 @@
+//COLORS
+$yellow: #ffd068;
+$red: #c30013;
+$black: #000000;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
