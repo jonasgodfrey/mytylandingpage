@@ -1,4 +1,250 @@
-.home{
-    width: 80%;
-    border: 1px solid red;
+@import "../../Main.scss";
+
+.home {
+  width: 100vw;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .sectionOne {
+    width: 90%;
+    .headLineUnit {
+      width: 100%;
+      .headLinePage_text {
+        display: flex;
+        justify-content: space-between;
+        .headlineBlock {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: space-between;
+          max-width: 50%;
+          .headline {
+            font-size: 4.3rem;
+            text-align: left;
+          }
+          .request_demo {
+            background-color: $black;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.6rem;
+            font-size: 1.5rem;
+            font-weight: 200;
+            width: 40%;
+            margin-top: 0.6rem;
+          }
+        }
+        .sub_headline {
+          max-width: 25%;
+          font-size: 1.7rem;
+          line-height: 2.2rem;
+          padding-bottom: 1rem;
+          max-height: 45%;
+        }
+      }
+    }
+    .highRise_building {
+      width: 100%;
+      margin-top: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .sectionTwo {
+    width: 100%;
+    background-color: $light_yellow;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 10rem 0;
+    .sectionTwo_content {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      .one_stop_solution {
+        align-self: flex-start;
+        width: 40%;
+        span {
+          font-size: 1.4rem;
+          font-weight: 200;
+        }
+        h2 {
+          margin-top: 2rem;
+          font-size: 2.5rem;
+        }
+        .request_demo {
+          background-color: $black;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.6rem;
+          font-size: 1.5rem;
+          width: 50%;
+          margin-top: 2rem;
+        }
+      }
+    }
+    .cards {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 3rem;
+      flex-direction: column;
+      .card_flexBox {
+        display: flex;
+        justify-content: space-between;
+        .card1 {
+          background-color: $light_purple;
+        }
+        .card2 {
+          background-color: $light_green;
+        }
+        .card3 {
+          background-color: $purple;
+        }
+        .card4 {
+          background-color: $yellow;
+        }
+
+        .card {
+          width: 49%;
+          img {
+            width: 100%;
+          }
+          .card_text {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            span {
+              text-transform: capitalize;
+              font-weight: 500;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sectionThree {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $gray;
+    .sectionThree_content {
+      margin-top: 5rem;
+      padding-bottom: 3rem;
+      text-align: center;
+      font-size: 4.6rem;
+      width: 90%;
+      h1 {
+        width: 100%;
+      }
+      img {
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+  }
+  .sectionFour {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .sectionFour_header {
+      width: 90%;
+      text-align: left;
+      span {
+        text-transform: capitalize;
+        font-size: 3rem;
+      }
+    }
+    .offers {
+      // border:1px dotted red;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4rem;
+      width: 120vw;
+      margin-left: 8rem;
+      .offer {
+        border: 1px solid $black;
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.4rem;
+
+        .description {
+          font-size: 1.5rem;
+          font-weight: 200;
+        }
+        .offer_title {
+          margin-top: 1rem;
+        }
+      }
+    }
+    .q_and_a {
+      border: 1px solid red;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4rem;
+      .find_answers {
+        width: 30%;
+        height: 50%;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+          font-size: 2.2rem;
+        }
+        .request_demo {
+          background-color: $black;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: 200;
+          width: 60%;
+          margin-top: 3rem;
+        }
+      }
+      .questionBlock {
+        width: 65%;
+        font-size: 1.8rem;
+        .question {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          border-bottom: 1px solid $black;
+          padding-bottom: 1.7rem;
+          width: 100%;
+          .question_answer {
+            display: flex;
+            justify-content: space-between;
+            .questionB{
+              margin-top: 1rem;
+            }
+          }
+          .answer {
+            font-weight: 200;
+            width: 100%;
+            padding: 0;
+            margin-top: 1rem;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+  }
 }
