@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+    width: 1200px;
+    background-color: white;
+}
+
+.left-section {
+    justify-content: center;
+    flex: 1;
+    padding-left: 100px;
+}
+
+.left-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 20px;
+    color: #666;
+}
+
+.left-section a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[id="email"],
+input[id="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 94%;
+    font-size: 16px;
+}
+
+.forgot-password {
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signin-btn {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signin-btn:hover {
+    background-color: #333;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 1rem;
+}
+
+/* for image */
+.top-nav .image {
+    height: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links #button {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.nav-links #button1 {
+    background-color: #e7e4e4;
+    border: none;
+    padding: 10px 20px;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.nav-links #button:hover {
+    background-color: #e0e1e0;
+    color: #000;
+}
+
+.nav-links #button1:hover {
+    color: #e0e1e0;
+    background-color: #000;
+}
