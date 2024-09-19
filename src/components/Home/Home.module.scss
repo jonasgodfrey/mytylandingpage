@@ -6,22 +6,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .sectionOne {
     width: 90%;
     .headLineUnit {
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media screen  and (max-width:900px){
+        justify-content: center;
+        align-items: center;
+      }
       .headLinePage_text {
         display: flex;
         justify-content: space-between;
-        .headlineBlock {
-          display: flex;
+
+        @media screen and (max-width: 900px) {
           flex-direction: column;
-          align-items: start;
-          justify-content: space-between;
-          max-width: 50%;
+          text-align: center;
+          align-items: center;
+          width: 100%;
+        }
+        .headlineBlock {
+          width: 65%;
+          @media screen and (max-width: 900px) {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
           .headline {
-            font-size: 4.3rem;
+            font-size: 3.4rem;
             text-align: left;
+            @media screen  and (max-width:900px){
+              text-align: center;
+            }
           }
           .request_demo {
             background-color: $black;
@@ -29,19 +49,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0.6rem;
+            padding: 0.1rem;
             font-size: 1.5rem;
             font-weight: 200;
             width: 40%;
             margin-top: 0.6rem;
+            @media screen  and (max-width:900px){
+              width: 80%;
+            }
+            a {
+              padding: 0.1rem;
+              font-size: 1.5rem;
+              font-weight: 200;
+              color: #fff;
+              align-self: center;
+              padding-left: 1rem;
+            }
           }
         }
         .sub_headline {
-          max-width: 25%;
-          font-size: 1.7rem;
+          width: 32%;
+          font-size: 1.3rem;
           line-height: 2.2rem;
-          padding-bottom: 1rem;
-          max-height: 45%;
+          font-weight: 200;
+          @media screen  and (max-width:900px){
+             width: 100%;
+             margin-top: 1.5rem;
+          }
         }
       }
     }
@@ -65,12 +99,23 @@
       display: flex;
       flex-direction: column;
       margin-top: 4rem;
+      @media screen  and (max-width:900px){
+        align-items: center;
+      }
       .one_stop_solution {
         align-self: flex-start;
         width: 40%;
+        @media screen  and (max-width:900px){
+             width: 100%;
+             text-align: center;
+             display: flex;
+             flex-direction: column;
+             align-self: center;
+          }
         span {
           font-size: 1.4rem;
           font-weight: 200;
+          
         }
         h2 {
           margin-top: 2rem;
@@ -84,8 +129,19 @@
           align-items: center;
           padding: 0.6rem;
           font-size: 1.5rem;
-          width: 50%;
+          width: 60%;
           margin-top: 2rem;
+          @media screen  and (max-width:900px){
+            align-self: center;
+          }
+          a {
+            padding: 0.1rem;
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: #fff;
+            align-self: center;
+            padding-left: 1rem;
+          }
         }
       }
     }
@@ -99,6 +155,11 @@
       .card_flexBox {
         display: flex;
         justify-content: space-between;
+        @media screen  and (max-width:900px){
+          flex-direction: column;
+          width: 100%;
+          gap: 2rem;
+        }
         .card1 {
           background-color: $light_purple;
         }
@@ -117,14 +178,21 @@
           img {
             width: 100%;
           }
+          @media screen  and (max-width:900px){
+            width: 100%;
+          }
           .card_text {
             padding: 1.5rem;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             span {
               text-transform: capitalize;
               font-weight: 500;
               font-size: 2rem;
+            }
+            a {
+              color: $black;
             }
           }
         }
@@ -142,6 +210,9 @@
       text-align: center;
       font-size: 4.6rem;
       width: 90%;
+      @media screen  and (max-width:900px){
+        font-size: 2rem;
+      }
       h1 {
         width: 100%;
       }
@@ -157,11 +228,15 @@
     align-items: center;
     flex-direction: column;
     .sectionFour_header {
+      margin-top: 3rem;
       width: 90%;
       text-align: left;
       span {
         text-transform: capitalize;
         font-size: 3rem;
+        @media screen and (max-width:500px){
+          font-size: 1.5rem;
+        }
       }
     }
     .offers {
@@ -171,12 +246,21 @@
       margin-top: 4rem;
       width: 120vw;
       margin-left: 8rem;
+      @media screen  and (max-width:900px){
+         flex-direction: column;
+         gap: 1rem;
+         width: 100vw;
+         margin-left: 0;
+      }
       .offer {
         border: 1px solid $black;
         width: 32%;
         display: flex;
         flex-direction: column;
         padding: 1.4rem;
+        @media screen  and (max-width:900px){
+           width: 100%;
+        }
 
         .description {
           font-size: 1.5rem;
@@ -184,15 +268,25 @@
         }
         .offer_title {
           margin-top: 1rem;
+          display: flex;
+          align-items: center;
+
+          span {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            margin-left: 0.7rem;
+          }
         }
       }
     }
     .q_and_a {
-      border: 1px solid red;
       width: 90%;
       display: flex;
       justify-content: space-between;
       margin-top: 4rem;
+      @media screen  and (max-width:900px){
+        flex-direction: column;
+      }
       .find_answers {
         width: 30%;
         height: 50%;
@@ -200,6 +294,9 @@
 
         flex-direction: column;
         justify-content: space-between;
+        @media screen  and (max-width:900px){
+           width: 100%;
+        }
 
         h1 {
           font-size: 2.2rem;
@@ -213,13 +310,26 @@
           padding: 0.4rem;
           font-size: 1.4rem;
           font-weight: 200;
-          width: 60%;
+          width: 70%;
           margin-top: 3rem;
+          a {
+            padding: 0.1rem;
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: #fff;
+            align-self: center;
+            padding-left: 1rem;
+          }
         }
       }
       .questionBlock {
         width: 65%;
         font-size: 1.8rem;
+        @media screen  and (max-width:900px){
+          margin-top: 4rem;
+          width: 100%;
+          font-size: 1rem;
+        }
         .question {
           display: flex;
           justify-content: space-between;
@@ -230,7 +340,8 @@
           .question_answer {
             display: flex;
             justify-content: space-between;
-            .questionB{
+            align-items: center;
+            .questionB {
               margin-top: 1rem;
             }
           }
@@ -246,5 +357,158 @@
     }
   }
   .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $black;
+    color: #fff;
+    padding: 7rem 0;
+    margin-top: 4rem;
+
+    flex-direction: column;
+    .allRightsReserved {
+      text-align: center;
+      color: #4b4b4b;
+      margin-top: 1.8rem;
+      font-size: 1.6rem;
+      @media screen and (max-width:900px){
+        font-size: 1rem;
+      }
+    }
+    .footerContent {
+      width: 90%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      padding: 4rem 0;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width:900px) {
+        flex-direction: column;
+      }
+      .contentRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // border: 1px solid yellow;
+        width: 38%;
+        @media screen and (max-width:900px){
+          width: 100%;
+          text-align: center;
+          align-items: center;
+        }
+        .footerHeading {
+          font-size: 2.3rem;
+          font-weight: 600;
+        }
+        .request_demo {
+          background-color: $black;
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.4rem;
+          font-size: 1.4rem;
+          font-weight: 200;
+          width: 60%;
+          margin-top: 3rem;
+          border: 1px solid #fff;
+          a {
+            padding-left: 0.8rem;
+          }
+        }
+      }
+      .socials_logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+        @media screen and (max-width:900px){
+          margin-top: 2rem;
+          width: 100%;
+          flex-direction: column-reverse;
+        }
+
+        .socials {
+          height: 15%;
+          width: 67%;
+          align-self: flex-end;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @media screen and (max-width:900px) {
+            align-self: center;
+            width: 78%;
+          }
+          a {
+            color: #fff;
+            font-size: 2rem;
+
+            .icon-white {
+              color: white;
+            }
+          }
+        }
+        .logo {
+          width: 100%;
+          height: 85%;
+          display: flex;
+
+          img {
+            align-self: flex-end;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+// New nav styling
+.navOverlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 9999;
+
+  // When the nav is open, shift it into view
+  &.show {
+    left: 0;
+  }
+
+  .navLinks {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+    li {
+      margin: 2rem 0;
+
+      a {
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
   }
 }

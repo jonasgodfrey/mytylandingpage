@@ -13,6 +13,7 @@
   top: 0;
   z-index: 1000;
 
+
   .logo {
     width: 10%;
     height: 100%;
@@ -27,23 +28,79 @@
     width: 28%;
     display: flex;
     justify-content: space-between;
+    @media screen  and (max-width:900px){
+        
+        width:50%;
+    }
+    @media screen  and (max-width:705px){
+        
+        width:60%;
+    }
+    @media screen  and (max-width:600px){
+        
+        width:70%;
+    }
+    @media screen and (max-width:500px){
+      display: none;
+    }
     span {
       color: #fff;
-      padding: 0.4rem;
+
       text-align: center;
       font-size: 1.2rem;
+      cursor: pointer;
       a {
         text-decoration: none;
       }
     }
     .signIn {
-      min-width: 45%;
-      border: 1px solid #fff;
+      width: 45%;
+      // border: 1px solid #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       a {
+        width: 100%;
         color: #fff;
+        position: relative;
+        padding: 0.7rem;
+        display: block;
+        overflow: hidden;
+        // border: 1px solid magenta;
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-top: 2px solid #fff;
+          border-left: 2px solid #fff;
+          transition: 0.5s;
+          transform-origin: left;
+        }
+        &:hover:before {
+          width: 15px;
+          height: 15px;
+          transform: rotate(360deg);
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          border-bottom: 2px solid #fff;
+          border-right: 2px solid #fff;
+          transition: 0.5s;
+          transform-origin: right;
+        }
+        &:hover:after {
+          width: 15px;
+          height: 15px;
+          transform: rotate(360deg);
+        }
       }
     }
     .createAccount {
@@ -54,6 +111,13 @@
       align-items: center;
       a {
         color: $black;
+        padding: 0.2rem 0.4rem;
+        transition: .5s;
+        &:hover{
+          background-color:black;
+          color: white;
+          border: 2px solid white;
+        }
       }
     }
   }
